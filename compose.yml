@@ -1,6 +1,6 @@
 services:
   web:
-    build: .
+    build: ./flask-app
     ports:
       - 8080:80
     develop:
@@ -10,7 +10,7 @@ services:
           target: /usr/local/apache2/htdocs/
 
   flask-app:
-    build: ./flask-app
+    build: .
     ports:
       - 5000:5000
     develop:
