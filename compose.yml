@@ -8,3 +8,13 @@ services:
         - action: sync
           path: ./html/
           target: /usr/local/apache2/htdocs/
+
+  flask-app:
+    build: ./flask-app
+    ports:
+      - 5000:5000
+    develop:
+      watch:
+        - action: sync+restart
+          path: ./flask-app/
+          target: /app
