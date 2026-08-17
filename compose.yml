@@ -1,6 +1,6 @@
 services:
   web:
-    build: ./flask-app
+    build: ./html
     ports:
       - 8080:80
     develop:
