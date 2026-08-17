@@ -1,14 +1,4 @@
 services:
-  web:
-    build: ./html
-    ports:
-      - 8080:80
-    develop:
-      watch:
-        - action: sync
-          path: ./html/
-          target: /usr/local/apache2/htdocs/
-
   flask-app:
     build: .
     ports:
