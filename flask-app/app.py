@@ -8,7 +8,7 @@ def index():
     return jsonify(message="Hello world")
 
 
-@app.route("/healtz")
+@app.route("/healthz")
 def healtz():
     return jsonify(status="ok"), 200
 
